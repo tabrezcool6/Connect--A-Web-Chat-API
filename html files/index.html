@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect: An Online Chat Application</title>
+    <meta name="description" content="Connect is an online web application to connect between two or more users">
+
+    <script defer src="http://localhost:801/socket.io/socket.io.js"></script>
+    <script defer src="../js files/client.js"></script>
+    <link rel="stylesheet" href="../css files/style.css">
+
+</head>
+<body>
+    
+    <!-- Navigation Layout -->
+    <div id="id_navigation">
+        <header>                
+            <nav class="cls_nav" id="cls-nav">
+
+                <ul class="cls_nav">
+
+                    <h1 class="app_name">.Connect</h1>
+
+                    <li class="cls_nav_items">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#section_members">Members</a>
+                    </li>
+                    <li>
+                        <a href="#section_groups">Groups</a>
+                    </li>
+                    <li>
+                        <a href="#section_contactUs">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#section_login">Login</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        
+
+
+
+        <!-- Main Layout -->
+        <div id="main_page">
+            <div id="left_container" >
+                <div id="inner_right_container" >
+                    <div id="left_inner_top">
+                        <h3>Peoples</h3>
+                        <div id="members">
+                            <i src ="fa fa-user"></i>
+                            Harry
+                        </div>
+                        <div id="members">
+                            Sejal
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="right_container">
+                <div id="inner_right_container">
+                    <div>
+                        <h3>Chats</h3>
+                    </div>
+                    <div id="inner_top">
+                        <div class="main_message_container" >
+
+                            <!-- <div id="message_center" class="message center">
+                                Harry joined the chat
+                            </div>
+                            <div id="message_left" class="message left">
+                                Harry: Hey how are you? Lorem ipsum dolor sit amet. 
+                            </div>
+                            <div id="message_right" class="message right">
+                                Me: I'm fine bhai, What about you?
+                            </div> -->
+
+                        </div>
+                    </div>
+
+                    <div id="inner_bottom">
+                        <form action="" id="send_message_form">
+                            <input type="text" name="send_msg" id="send_message" autocomplete="off" placeholder="Type your text here....">
+                            <button class="btn" type="submit">Send</button>
+                        </form>                
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
